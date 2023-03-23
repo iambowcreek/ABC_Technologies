@@ -40,7 +40,7 @@ pipeline{
         }
         stage("7. Execute to Ansible"){ 
             steps{
-                 ansiblePlaybook credentialsId: 'ansible_sshopen', installation: 'ansible', inventory: 'dev.inv', playbook: 'ansible.yml'
+                 ansiblePlaybook credentialsId: 'ansible_sshopen', installation: 'ansible', inventory: 'dev.inv', playbook: 'playbook.yml'
             } 
         }
    }
