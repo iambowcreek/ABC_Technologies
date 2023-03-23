@@ -38,5 +38,10 @@ pipeline{
                 sh "docker push iambowcreek/abc_technologies:latest" 
             } 
         }
+        stage("7. Execute to Ansible"){ 
+            steps{
+                 ansiblePlaybook credentialsId: 'ansible_sshopen', installation: 'ansible', inventory: 'dev.inv', playbook: 'ansible.yml'
+            } 
+        }
    }
 }
