@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
     name: abc-tech-app
 spec:
-    replicas: 2
+    replicas: 3
     minReadySeconds: 45
     strategy:
         type: RollingUpdate
@@ -33,4 +33,4 @@ spec:
     ports:
         - port: 80 #cluster port
           targetPort: 8080 #container image port
-          nodePort: 32000
+          nodePort: 30080
