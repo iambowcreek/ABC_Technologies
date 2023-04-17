@@ -28,8 +28,11 @@ Steps:
 •	Created a new GitHub repo: link https://github.com/iambowcreek/abc_technologies.git 
 •	Initiated Git in Local Machine 
 •	Pushed the SRC to the New Repo Created on GitHub 
-•	Servers provisioned - 3 Servers for the following integration (Server A: Jenkins Master, Ansible Master, Docker. Server B: K8s Master, Ansible Node, Docker. Server C: K8s Node
-•	Server A: Configured Jenkins and installed all necessary plugins for the pipeline integration, Installed Ansible – configured the node for communication in server B, installed docker and integrated it with Jenkins, integrated ansible with docker and K8S. 
+•	Servers provisioned - 3 Servers for the following integration 
+-	Server A: Jenkins Master, Ansible Master, Docker, Maven
+-	Server B: K8s Master, Ansible Node, Docker, Prometheus and Grafana 
+-	Server C: K8s Node
+•	Server A: Configured Jenkins and installed all necessary plugins including Maven for the pipeline integration, Installed Ansible – configured the node for communication in server B, installed docker and integrated it with Jenkins, integrated ansible with docker and K8S. 
 •	Server B: Installed K8S, joined the node in server C. Created Ansible user and configured SSH connection with master node is server A. Installed Docker. 
 •	Server C: K8S Node 1 configured.
 •	Created my CI/CD Pipeline in Jenkins and configured My Jenkins Configurations with Maven Tool.
@@ -43,4 +46,4 @@ Steps:
 •	Configured K8S cloud on Jenkins
 •	Created my Ansible Playbook to deploy ABC Technologies Artifacts to K8S – deployment and service 
 •	Updated my Jenkinsfile to execute Ansible Playbook to deploy my containerised application to K8S server. 
-
+•	Installed Prometheus and Grafana on Server B to monitor the Kubernetes cluster
